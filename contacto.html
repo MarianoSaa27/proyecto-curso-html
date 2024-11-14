@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny el Agente Secreto</title>
+    <link rel="stylesheet" href="styleContacto.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="paraFooter">
+
+        <header>
+            <h1>Sunny, el Agente Secreto</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preferencias.html">Preferencias</a></li>
+                    <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                    <li><a class="active" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="contenedor-formulario">
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required minlength="3">
+    
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required minlength="3">
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+    
+                <label for="pais">País:</label>
+                <select name="pais" id="pais">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Peru">Perú</option>
+                    <option value="Uruguay">Uruguay</option>
+                </select>
+                
+                <label for="comentario">Comentario:</label>
+                <textarea name="comentario" id="comentario" placeholder="Ingresa tu comentario"></textarea>
+    
+                <label for="motivo">Motivo de contacto:</label>
+                <input type="radio" name="motivo" id="motivo"><i>Soy fan</i>
+                <input type="radio" name="motivo" id="motivo"><i>Quiero una remera</i>
+                <input type="radio" name="motivo" id="motivo"><i>Comerciales</i>
+                <input type="radio" name="motivo" id="motivo"><i>Reclamo</i>
+    
+                <input type="submit" value="Enviar">
+    
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">Todos los derechos reservados &copy; 2024</footer>
+</body>
+</html>
